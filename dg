@@ -1,0 +1,21 @@
+# ---- Required for browser and client-side SDK ----
+NEXT_PUBLIC_SUPABASE_URL=https://fjixxsvezkqmcisnnyiw.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZqaXh4c3ZlemtxbWNpc25ueWl3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTkwODgxNzMsImV4cCI6MjA3NDY2NDE3M30.mf_kuOoE1UgOZ3ZTpWbXLXf-tsZcyzQxuLN96AICXWU
+
+# ---- Recommended server-side duplicates (middleware/server client can use these) ----
+SUPABASE_URL=${https://fjixxsvezkqmcisnnyiw.supabase.co}
+SUPABASE_ANON_KEY=${eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZqaXh4c3ZlemtxbWNpc25ueWl3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTkwODgxNzMsImV4cCI6MjA3NDY2NDE3M30.mf_kuOoE1UgOZ3ZTpWbXLXf-tsZcyzQxuLN96AICXWU}
+
+# ---- Auth flow (dev email redirect for sign-up confirmation) ----
+# In dev, send users to your local success page after email confirmation
+NEXT_PUBLIC_DEV_SUPABASE_REDIRECT_URL=http://localhost:3000/auth/sign-up-success
+
+# ---- Optional: Stripe (only if you enable donations/payments) ----
+# Never expose secret keys client-side
+STRIPE_SECRET_KEY=sk_live_or_test_secret_here
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_live_or_test_publishable_here
+
+# ---- Optional: AI model via Vercel AI SDK (only if you enable mentor matching OCR, etc.) ----
+# If using OpenAI through the Vercel AI Gateway, you might not need keys here.
+# OPENAI_API_KEY=your_openai_key_if_needed
+# AI_MODEL=openai/gpt-5-mini
